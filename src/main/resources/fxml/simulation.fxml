@@ -52,6 +52,9 @@
                <font>
                   <Font size="18.0" />
                </font>
+               <HBox.margin>
+                  <Insets left="10.0" />
+               </HBox.margin>
             </Text>
             <TextField fx:id="txtendt" prefHeight="6.0" prefWidth="57.0" promptText="t">
                <font>
