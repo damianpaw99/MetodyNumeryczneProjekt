@@ -1,0 +1,23 @@
+plugins {
+    id 'java'
+    id 'application'
+    id 'org.openjfx.javafxplugin' version '0.0.8'
+}
+
+group 'edu.ib'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testCompile group: 'junit', name: 'junit', version: '4.12'
+    compile group: 'org.mariuszgromada.math', name: 'MathParser.org-mXparser', version: '4.4.2'
+}
+javafx{
+    version='15'
+    modules=['javafx.controls','javafx.fxml']
+}
+
+mainClassName="edu.ib.Main"
