@@ -9,6 +9,7 @@ public class Particle {
     private ForceCalculator f;
 
     public Particle(double x, double y, double vx, double vy, double m, ForceCalculator f) {
+        if(m<=0) throw new IllegalArgumentException("m has to be greater than 0");
         this.x = x;
         this.y = y;
         this.vx = vx;
